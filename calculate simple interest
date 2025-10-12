@@ -1,0 +1,21 @@
+ #include <stdio.h>
+
+int main() {
+
+    float principal, rate, time, simpleInterest;
+
+    // Read input values for principal, rate, and time
+
+    scanf("%f %f %f", &principal, &rate, &time);
+
+    // Calculate Simple Interest
+
+    simpleInterest = (principal * rate * time) / 100;
+
+    // Print the Simple Interest formatted to two decimal places
+
+    printf("%.2f\n", simpleInterest);
+
+    return 0;
+
+}

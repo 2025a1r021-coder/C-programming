@@ -1,0 +1,73 @@
+ #include <stdio.h>
+
+int main() {
+
+    int N;
+
+    
+
+    // Read the input integer N
+
+    scanf("%d", &N);
+
+    
+
+    // Handle the case for N=0
+
+    if (N <= 0) {
+
+        return 0;
+
+    }
+
+    
+
+    // Initialize the first two Fibonacci numbers
+
+    int a = 0, b = 1;
+
+    
+
+    // Print the first term if N >= 1
+
+    if (N >= 1) {
+
+        printf("%d", a);
+
+    }
+
+    
+
+    // Print the second term if N >= 2
+
+    if (N >= 2) {
+
+        printf(" %d", b);
+
+    }
+
+    
+
+    // Loop to calculate and print the remaining terms
+
+    for (int i = 2; i < N; i++) {
+
+        int nextTerm = a + b;
+
+        printf(" %d", nextTerm);
+
+        a = b;
+
+        b = nextTerm;
+
+    }
+
+    
+
+    printf("\n");
+
+    
+
+    return 0;
+
+}

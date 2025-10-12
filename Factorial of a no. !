@@ -1,0 +1,43 @@
+ #include <stdio.h>
+
+int main() {
+
+    int N, i;
+
+    long long factorial = 1; // Use long long to handle larger factorials
+
+    
+
+    // Read the input integer N
+
+    scanf("%d", &N);
+
+    
+
+    // Calculate the factorial using a for loop
+
+    if (N < 0) {
+
+        printf("Factorial of a negative number doesn't exist.");
+
+    } else {
+
+        for (i = 1; i <= N; i++) {
+
+            factorial *= i;
+
+        }
+
+        
+
+        // Print the factorial
+
+        printf("%lld", factorial);
+
+    }
+
+    
+
+    return 0;
+
+}

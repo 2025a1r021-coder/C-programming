@@ -1,0 +1,32 @@
+ #include <stdio.h>
+
+int main() {
+
+    int N; // Declare an integer variable to store the input number
+
+    // Read the integer input from STDIN (Standard Input)
+
+    scanf("%d", &N); 
+
+    // Check the sign of the number and print the corresponding output
+
+    if (N > 0) {
+
+        printf("Positive\n"); 
+
+    } else if (N < 0) {
+
+        printf("Negative\n");
+
+    } else { // N must be 0
+
+        printf("Zero\n");
+
+    }
+
+    return 0; // Indicate successful program execution
+
+}
+
+
+

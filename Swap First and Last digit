@@ -1,0 +1,49 @@
+ #include <stdio.h>
+
+#include <math.h>
+
+int main() {
+
+    int N;
+
+    scanf("%d", &N);
+
+    if (N >= 0 && N <= 9) {
+
+        printf("%d\n", N);
+
+        return 0;
+
+    }
+
+    int lastDigit = N % 10;
+
+    
+
+    int temp = N;
+
+    int digits = 0;
+
+    while (temp > 0) {
+
+        temp /= 10;
+
+        digits++;
+
+    }
+
+    int powerOf10 = pow(10, digits - 1);
+
+    int firstDigit = N / powerOf10;
+
+    int middlePart = N % powerOf10;
+
+    middlePart = middlePart / 10;
+
+    int newNumber = lastDigit * powerOf10 + middlePart * 10 + firstDigit;
+
+    printf("%d\n", newNumber);
+
+    return 0;
+
+}

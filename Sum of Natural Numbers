@@ -1,0 +1,33 @@
+ #include <stdio.h>
+
+int main() {
+
+    int N, i, sum = 0;
+
+    
+
+    // Read the input integer N
+
+    scanf("%d", &N);
+
+    
+
+    // Calculate the sum of natural numbers from 1 to N using a for loop
+
+    for (i = 1; i <= N; i++) {
+
+        sum += i;
+
+    }
+
+    
+
+    // Print the final sum
+
+    printf("%d", sum);
+
+    
+
+    return 0;
+
+}

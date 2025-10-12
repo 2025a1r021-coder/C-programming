@@ -1,0 +1,25 @@
+ #include <stdio.h>
+
+int main() {
+
+    int num1, num2;
+
+    // Read the two integers chosen by Riya and Aman
+
+    scanf("%d %d", &num1, &num2);
+
+    // Swap the numbers using arithmetic operations
+
+    num1 = num1 + num2; // num1 now holds the sum of original num1 and num2
+
+    num2 = num1 - num2; // num2 now holds the original value of num1 (sum - original num2)
+
+    num1 = num1 - num2; // num1 now holds the original value of num2 (sum - new num2, which is original num1)
+
+    // Print the swapped numbers
+
+    printf("%d %d", num1, num2);
+
+    return 0;
+
+}

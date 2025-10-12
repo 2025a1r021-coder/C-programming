@@ -1,0 +1,47 @@
+ #include <stdio.h>
+
+int main() {
+
+    // Declare variables for marks in five subjects
+
+    int english, mathematics, science, computer, history;
+
+    // Declare variables for total, average, and percentage
+
+    int total_marks;
+
+    float average_marks;
+
+    float percentage;
+
+    // Read marks in 5 subjects from the user
+
+    // The input format specifies five space-separated integers
+
+    scanf("%d %d %d %d %d", &english, &mathematics, &science, &computer, &history);
+
+    // Calculate total marks
+
+    total_marks = english + mathematics + science + computer + history;
+
+    // Calculate average marks (assuming each subject is out of 100, so total max is 500)
+
+    // Cast to float for accurate floating-point division
+
+    average_marks = (float)total_marks / 5;
+
+    // Calculate percentage (total marks out of 500, then multiplied by 100)
+
+    // Cast to float for accurate floating-point division
+
+    percentage = ((float)total_marks / 500) * 100;
+
+    // Print the results in the specified format: total average percentage
+
+    // Average and percentage should be formatted to two decimal places
+
+    printf("%d %.2f %.2f\n", total_marks, average_marks, percentage);
+
+    return 0;
+
+}

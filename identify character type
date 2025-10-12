@@ -1,0 +1,39 @@
+  #include <stdio.h> // Required for input/output functions like printf and scanf
+
+#include <ctype.h> // Required for character handling functions like isalpha and isdigit
+
+int main() {
+
+    char ch; // Declare a character variable to store the input
+
+    // Read a single character from standard input
+
+    scanf("%c", &ch);
+
+    // Check if the character is an alphabet
+
+    if (isalpha(ch)) {
+
+        printf("Alphabet\n");
+
+    }
+
+    // Else, check if the character is a digit
+
+    else if (isdigit(ch)) {
+
+        printf("Digit\n");
+
+    }
+
+    // Else, it must be a symbol
+
+    else {
+
+        printf("Symbol\n");
+
+    }
+
+    return 0; // Indicate successful program execution
+
+}

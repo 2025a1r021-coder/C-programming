@@ -1,0 +1,61 @@
+  #include <stdio.h>
+
+int main() {
+
+    int physics, chemistry, biology, mathematics, computer;
+
+    float total_marks;
+
+    float percentage;
+
+    char grade;
+
+    // Input marks for five subjects
+
+    scanf("%d %d %d %d %d", &physics, &chemistry, &biology, &mathematics, &computer);
+
+    // Calculate total marks
+
+    total_marks = physics + chemistry + biology + mathematics + computer;
+
+    // Calculate percentage (ensure float division)
+
+    percentage = (total_marks / 500.0) * 100;
+
+    // Assign grade based on percentage
+
+    if (percentage >= 90) {
+
+        grade = 'A';
+
+    } else if (percentage >= 80) { // Implicitly less than 90%
+
+        grade = 'B';
+
+    } else if (percentage > 70) { // Implicitly less than 80%
+
+        grade = 'C';
+
+    } else if (percentage >= 60) { // Implicitly less than or equal to 70%
+
+        grade = 'D';
+
+    } else if (percentage >= 40) { // Implicitly less than 60%
+
+        grade = 'E';
+
+    } else { // Implicitly less than 40%
+
+        grade = 'F';
+
+    }
+
+    // Output the percentage and grade
+
+    printf("Percentage = %.2f\n", percentage);
+
+    printf("Grade = %c\n", grade);
+
+    return 0;
+
+}

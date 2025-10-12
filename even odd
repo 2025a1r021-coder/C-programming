@@ -1,0 +1,29 @@
+ #include <stdio.h> // Required for input/output functions like scanf and printf
+
+int main() {
+
+    int N; // Declare an integer variable to store the input number
+
+    // Read the integer input from STDIN (Standard Input)
+
+    scanf("%d", &N); 
+
+    // Check if the number is even or odd using the modulo operator
+
+    // A number is Even if it leaves no remainder when divided by 2 (N % 2 == 0)
+
+    // Otherwise, the number is Odd
+
+    if (N % 2 == 0) {
+
+        printf("Even\n"); // Print "Even" if the number is even
+
+    } else {
+
+        printf("Odd\n"); // Print "Odd" if the number is odd
+
+    }
+
+    return 0; // Indicate successful program execution
+
+}

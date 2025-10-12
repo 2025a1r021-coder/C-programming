@@ -1,0 +1,43 @@
+  #include <stdio.h>
+
+int main() {
+
+    int N, current_number, max_number;
+
+    // Read the total count of numbers, N
+
+    scanf("%d", &N);
+
+    
+
+    // Read the first number to initialize max_number
+
+    scanf("%d", &max_number);
+
+    // Loop N-1 times to read the rest of the numbers
+
+    for (int i = 1; i < N; i++) {
+
+        scanf("%d", &current_number);
+
+        
+
+        // If the current number is greater than the maximum found so far, update the maximum
+
+        if (current_number > max_number) {
+
+            max_number = current_number;
+
+        }
+
+    }
+
+    
+
+    // Print the final maximum number
+
+    printf("%d\n", max_number);
+
+    return 0;
+
+}

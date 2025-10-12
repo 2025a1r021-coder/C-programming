@@ -1,0 +1,21 @@
+ #include <stdio.h>
+
+int main() {
+
+    float celsius, fahrenheit;
+
+    // Read the temperature in Celsius
+
+    scanf("%f", &celsius);
+
+    // Convert Celsius to Fahrenheit using the formula: F = (C * 9/5) + 32
+
+    fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+
+    // Print the Fahrenheit value, formatted to 2 decimal places
+
+    printf("%.2f\n", fahrenheit);
+
+    return 0;
+
+}

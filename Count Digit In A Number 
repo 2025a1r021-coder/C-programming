@@ -1,0 +1,57 @@
+  #include <stdio.h>
+
+int main() {
+
+    long long N;
+
+    int count = 0;
+
+    
+
+    // Read the input integer N
+
+    scanf("%lld", &N);
+
+    
+
+    // Handle the special case of 0
+
+    if (N == 0) {
+
+        count = 1;
+
+    } else {
+
+        // Handle negative numbers by converting to positive
+
+        if (N < 0) {
+
+            N = -N;
+
+        }
+
+        
+
+        // Loop to count the digits
+
+        while (N != 0) {
+
+            N /= 10;
+
+            ++count;
+
+        }
+
+    }
+
+    
+
+    // Print the final count of digits
+
+    printf("%d", count);
+
+    
+
+    return 0;
+
+}

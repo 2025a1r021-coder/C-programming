@@ -1,0 +1,35 @@
+ #include <stdio.h>
+
+#include <string.h> // Not strictly necessary for this problem, but often included in HackerRank boilerplate
+
+#include <math.h>   // Not strictly necessary for this problem, but often included in HackerRank boilerplate
+
+#include <stdlib.h> // Not strictly necessary for this problem, but often included in HackerRank boilerplate
+
+int main() {
+
+    int A, B;
+
+    // Read the two space-separated integers
+
+    scanf("%d %d", &A, &B);
+
+    // Compare the two integers and print the largest
+
+    if (A > B) {
+
+        printf("%d\n", A);
+
+    } else if (B > A) {
+
+        printf("%d\n", B);
+
+    } else { // If both numbers are equal
+
+        printf("%d\n", A); // Print either A or B, as they are the same
+
+    }
+
+    return 0;
+
+}

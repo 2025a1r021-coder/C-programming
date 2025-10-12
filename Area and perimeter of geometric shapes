@@ -1,0 +1,65 @@
+  #include <stdio.h>
+
+int main() {
+
+    // Declare variables for inputs
+
+    float circle_radius;
+
+    float square_side;
+
+    float rectangle_length, rectangle_width;
+
+    // Declare variables for calculated values
+
+    float circle_area, circle_perimeter;
+
+    float square_area, square_perimeter;
+
+    float rectangle_area, rectangle_perimeter;
+
+    // Define PI
+
+    const float PI = 3.1416; // As specified in the problem statement
+
+    // Input for Circle
+
+    scanf("%f", &circle_radius);
+
+    // Input for Square
+
+    scanf("%f", &square_side);
+
+    // Input for Rectangle
+
+    scanf("%f %f", &rectangle_length, &rectangle_width);
+
+    // Calculate Area and Perimeter for Circle
+
+    circle_area = PI * circle_radius * circle_radius;
+
+    circle_perimeter = 2 * PI * circle_radius;
+
+    // Calculate Area and Perimeter for Square
+
+    square_area = square_side * square_side;
+
+    square_perimeter = 4 * square_side;
+
+    // Calculate Area and Perimeter for Rectangle
+
+    rectangle_area = rectangle_length * rectangle_width;
+
+    rectangle_perimeter = 2 * (rectangle_length + rectangle_width);
+
+    // Output results formatted to two decimal places
+
+    printf("Circle: %.2f %.2f\n", circle_area, circle_perimeter);
+
+    printf("Square: %.2f %.2f\n", square_area, square_perimeter);
+
+    printf("Rectangle: %.2f %.2f\n", rectangle_area, rectangle_perimeter);
+
+    return 0;
+
+}

@@ -1,0 +1,43 @@
+ #include <stdio.h>
+
+#include <ctype.h> // Required for isalpha() and tolower() functions
+
+int main() {
+
+    char ch;
+
+    // Read a single character, the space before %c handles potential leftover newlines from previous inputs
+
+    scanf(" %c", &ch);
+
+    // Check if the character is an alphabet
+
+    if (!isalpha(ch)) {
+
+        printf("Invalid Input\n");
+
+    } else {
+
+        // Convert the character to lowercase for case-insensitive checking
+
+        char lower_ch = tolower(ch);
+
+        // Check if the lowercase character is a vowel
+
+        if (lower_ch == 'a' || lower_ch == 'e' || lower_ch == 'i' || lower_ch == 'o' || lower_ch == 'u') {
+
+            printf("Vowel\n");
+
+        } else {
+
+            // If it's an alphabet but not a vowel, it's a consonant
+
+            printf("Consonant\n");
+
+        }
+
+    }
+
+    return 0;
+
+}

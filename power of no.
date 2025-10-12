@@ -1,0 +1,29 @@
+ #include <stdio.h>
+
+#include <math.h> // Required for pow() function
+
+int main() {
+
+    double base, exponent; // Use double for compatibility with pow() function
+
+    double result;
+
+    // Read base and exponent from standard input
+
+    // The problem statement specifies two integers, but pow expects doubles
+
+    scanf("%lf %lf", &base, &exponent);
+
+    // Calculate the power using the built-in pow() function
+
+    result = pow(base, exponent);
+
+    // Print the result as a single number, formatted to zero decimal places
+
+    // to match the integer output requirement (e.g., 8 instead of 8.00)
+
+    printf("%.0lf\n", result);
+
+    return 0;
+
+}

@@ -1,0 +1,24 @@
+ int main() {
+
+    char c;
+
+    int i;
+
+    float f;
+
+    double d;
+
+    // Read input values: character, integer, float, double
+
+    scanf("%c %d %f %lf", &c, &i, &f, &d);
+
+    // Print output values with specified formatting
+
+    printf("%c %d %.2f %.6lf\n", c, i, f, d);
+
+    return 0;
+
+}
+
+
+ 

@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int P, T;
+    float R, CI;
+
+    // Read inputs from separate lines
+    scanf("%d", &P);
+    scanf("%f", &R);
+    scanf("%d", &T);
+
+    // Calculate Compound Interest
+    CI = P * pow((1 + R / 100), T) - P;
+
+    // Print CI rounded to 2 decimal places
+    printf("%.2f\n", CI);
+
+    return 0;
+}

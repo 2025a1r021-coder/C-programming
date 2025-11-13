@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int N, key, position = -1;
+
+    scanf("%d", &N);
+
+    int arr[100];  // Since N <= 100
+
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    scanf("%d", &key);
+
+    // Linear search
+    for (int i = 0; i < N; i++) {
+        if (arr[i] == key) {
+            position = i + 1; // 1-based index
+            break;
+        }
+    }
+
+    if (position != -1)
+        printf("Element found at position %d\n", position);
+    else
+        printf("Element not found\n");
+
+    return 0;
+}

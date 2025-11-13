@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main (){
+    int N ;
+    scanf("%d",&N);
+    int stu[N];
+    int i ;
+    for(i=0;i<N;i++){
+        scanf("%d",&stu[i]);
+    }
+    for(i=0;i<N;i++){
+        printf("%d\t",stu[i]);
+    }
+    return 0 ;
+}

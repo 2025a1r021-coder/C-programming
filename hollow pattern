@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int N, M;
+    scanf("%d %d", &N, &M);
+
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= M; j++) {
+            // Print star if it's the first or last row or first or last column
+            if (i == 1 || i == N || j == 1 || j == M) {
+                printf("*");
+            } else {
+                printf(" ");
+            }
+            // Print space after each star or space except last column for formatting
+            if (j != M) {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
